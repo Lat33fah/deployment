@@ -22,7 +22,7 @@ def predict_risk(age, systolicbp, diastolicbp, bs, bodytemp):
 
 def main():
     st.title("Maternal Health Risk Prediction")
-    st.image(pregnant, caption="Image of a doctor with a patient")
+    st.image("https://github.com/Lat33fah/deployment/blob/main/pregnant.jpg", width=800)
     html_temp = """
     <div style="background-color:green;padding:10px">
     <h2 style="color:white;text-align:center;"> Maternal Health Risk Prediction ML App </h2>
