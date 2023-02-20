@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
-
+from PIL import Image
 
 pickle_in = open("rf_model.pkl", "rb")
 classifier = pickle.load(pickle_in)
@@ -22,6 +22,7 @@ def predict_risk(age, systolicbp, diastolicbp, bs, bodytemp):
 
 def main():
     st.title("Maternal Health Risk Prediction")
+    st.image(pregnant, caption="Image of a doctor with a patient")
     html_temp = """
     <div style="background-color:green;padding:10px">
     <h2 style="color:white;text-align:center;"> Maternal Health Risk Prediction ML App </h2>
