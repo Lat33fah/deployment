@@ -29,10 +29,10 @@ def main():
     """
     st.markdown(html_temp, unsafe_allow_html=True)
     age = st.text_input("Age")
-    systolicbp = st.text_input("SystolicBP")
-    diastolicbp = st.text_input("DiastolicBP")
-    bs = st.text_input("BS")
-    bodytemp = st.text_input("BodyTemp")
+    systolicbp = st.text_input("SystolicBP(110-120mmHg)")
+    diastolicbp = st.text_input("DiastolicBP(80-90mmHg)")
+    bs = st.text_input("BS(<7mmol/L)")
+    bodytemp = st.text_input("BodyTemp(F)")
     result = ""
     if st.button("Predict"):
         result = predict_risk(age, systolicbp, diastolicbp, bs, bodytemp)
